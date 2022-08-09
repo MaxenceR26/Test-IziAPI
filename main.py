@@ -25,7 +25,7 @@ Ce qui surprend certains observateurs, en particulier la chroniqueuse Ann Lander
 Les solutions vont du compromis à l'utilisation de dérouleurs distincts, voire de salles de bains entièrement séparées. Un passionné connu (Bill Jarrett) préconise un plan où son pays adopterait un standard imposant une seule orientation[réf. nécessaire] ; par ailleurs, un inventeur nommé Curtis Batts espère résoudre le problème en popularisant un nouveau type de dérouleur de papier toilette, capable de pivoter d'une orientation à l'autre, système breveté qu'il a présenté au salon INPEX (en) en 19994.
 
 Vers la fin du xxe siècle, la controverse est devenue un mème Internet, repris à l'envi sur la toile5.
-""".replace(',', '').split()
+""".lower().replace(',', '').split()
 
 response = requests.get("https://iziapi.herokuapp.com/api/stopwords/english").json()
 data = set(response)
